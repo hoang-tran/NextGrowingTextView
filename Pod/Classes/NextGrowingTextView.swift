@@ -239,7 +239,7 @@ public class NextGrowingTextView: UIScrollView {
         
         self.textView.text = newText
         
-        let textViewMargin: CGFloat = 16
+        let textViewMargin: CGFloat = 36
         let height = self.measureTextViewSize().height - (textViewMargin + self.textView.contentInset.top + self.textView.contentInset.bottom)
         
         self.textView.text = saveText
