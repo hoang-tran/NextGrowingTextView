@@ -78,7 +78,16 @@ public class NextGrowingTextView: UIScrollView {
             self._maxNumberOfLines = newValue
         }
     }
-    
+  
+    public var autocorrectionType: UITextAutocorrectionType {
+        get {
+            return self.textView.autocorrectionType
+        }
+        set {
+            self.textView.autocorrectionType = newValue
+        }
+    }
+  
     public var disableAutomaticScrollToBottom = false
     
     public override init(frame: CGRect) {
